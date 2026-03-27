@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap");
+
+:root { --font-cormorant: "Cormorant Garamond", Georgia, serif; --font-dm-sans: "DM Sans", system-ui, sans-serif; }
+* { box-sizing: border-box; padding: 0; margin: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { background-color: #0a0400; color: #fef3e2; font-family: var(--font-dm-sans); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #130800; }
+::-webkit-scrollbar-thumb { background: #C9A227; border-radius: 3px; }
+::selection { background: #C9A22780; color: #fef3e2; }
+.text-gradient-gold { background: linear-gradient(135deg, #E2BB47 0%, #C9A227 40%, #D4700A 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.border-gradient { border: 1px solid transparent; background: linear-gradient(#130800, #130800) padding-box, linear-gradient(135deg, #C9A227, #D4700A) border-box; }
+.glass { background: rgba(255, 243, 226, 0.04); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(201, 162, 39, 0.15); }
